@@ -1,0 +1,93 @@
+:root {
+  --primary: rgb(231, 62, 0);
+  --primary-l: orangered;
+  --primary-d: red;
+  --secondary: rgb(0, 0, 44);
+}
+/* scroll menu */
+.scroll-menu-wrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scroll-menu-wrapper small {
+  font-weight: 900;
+  font-size: 12px;
+  color: var(--secondary);
+}
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0px 15px;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  color: var(--primary);
+  font-weight: 300;
+}
+
+.scrollmenu a:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  row-gap: 10px;
+  column-gap: 20px;
+  padding: 15px;
+}
+
+.book-grid .card-content {
+  padding: 5px 10px !important;
+}
+.book-grid .card-action {
+  padding: 5px 10px 10px 10px !important;
+  display: grid;
+}
+
+@media screen and (max-width: 959px) {
+  .scrollmenu {
+    padding: 0;
+  }
+  .scrollmenu a {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-scrollbar:vertical {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar:horizontal {
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.151);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+}
