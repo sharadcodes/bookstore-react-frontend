@@ -17,7 +17,7 @@ const Nav = () => {
       brand={
         <span className="brand-logo" href="/">
           <Link to="/" className="btn btn-flat white-text deep-orange" node="a">
-            ANJANIBOOKS
+            DOJO BOOKS
           </Link>
         </span>
       }
