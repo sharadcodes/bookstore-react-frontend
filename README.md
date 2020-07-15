@@ -10,10 +10,10 @@
 
 - [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces. 
 - [NodeJS](https://nodejs.org/en/)- Executes JavaScript code outside of a browser.
-- MaterialUI
+- [React Materialize](https://github.com/react-materialize/react-materialize)- Material design components for react, powered by materializecss.
 
 ### Icons
-- Material Icons
+- [Material Icons](https://material.io/resources/icons/?style=baseline)- Beautifully crafted icons for common actions and items.
 
 ### Database
 - [MongoDB](https://www.mongodb.com/) - The database for modern applications.
